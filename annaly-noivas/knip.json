@@ -1,6 +1,0 @@
-{
-  "$schema": "https://unpkg.com/knip@6/schema.json",
-  "entry": ["e2e/**/*.spec.ts", "src/**/*.test.{ts,tsx}"],
-  "project": ["src/**/*.{ts,tsx}", "e2e/**/*.ts"],
-  "ignoreDependencies": ["@swc/core"]
-}
