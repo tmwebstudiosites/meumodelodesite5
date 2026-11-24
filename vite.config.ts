@@ -3,6 +3,8 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
+  // Em subcaminhos (GitHub Pages) o deploy define VITE_BASE=/nome-do-repo/
+  base: process.env.VITE_BASE ?? "/",
   plugins: [react()],
   resolve: { alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) } },
   build: {

@@ -6,7 +6,7 @@
   "description": "Site da Annaly Noivas — aluguel de vestidos de noiva e festa em Niterói",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node scripts/spa-fallback.mjs",
     "preview": "vite preview --port 4173",
     "typecheck": "tsc -b --noEmit",
     "lint": "biome check .",
